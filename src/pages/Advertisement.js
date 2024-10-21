@@ -1,9 +1,9 @@
-function Item() {
+function Advertisement() {
     return (
         <div>
-            <p>Item</p>
+            <p>Advertisement</p>
         </div>
     );
 }
 
-export default Item;
+export default Advertisement;
