@@ -1,14 +1,14 @@
 import UserContext from "../utils/contexts";
 import {useContext} from "react";
 
-function Profile() {
+function Home() {
     const {userId, setUserId} = useContext(UserContext);
 
     return (
         <div>
-            <p>Profile</p>
+            <p>Home</p>
         </div>
     );
 }
 
-export default Profile;
+export default Home;

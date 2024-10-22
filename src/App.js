@@ -1,27 +1,35 @@
-import logo from './assets/logo.svg';
 import './styles/App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Catalog from "./pages/Catalog";
 import Profile from "./pages/Profile";
 import Registration from "./pages/Registration";
 import Advertisement from "./pages/Advertisement";
+import Home from "./pages/Home";
+import UserContext from "./utils/contexts";
+import React, {useEffect, useState} from 'react';
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <Routes>
-                        <Route path="/Catalog" element={<Catalog/>}/>
-                        <Route path="/Advertisement" element={<Advertisement/>}/>
-                        <Route path="/Profile" element={<Profile/>}/>
-                        <Route path="/Registration" element={<Registration/>}/>
-                    </Routes>
-                </div>
+    const [userId, setUserId] = useState(null);
+    useEffect(() => {
+        const telegram = window.Telegram.WebApp;
+        telegram.setBackgroundColor("#ffffff");
+        let telegramUserId = window.Telegram.WebApp?.initDataUnsafe?.user?.id || 5191469996;
+        window.Telegram.WebApp.expand();
+        setUserId(telegramUserId)
+    }, []);
+    return (<Router>
+        <UserContext.Provider value={{userId, setUserId}}>
+            <div>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/Catalog" element={<Catalog/>}/>
+                    <Route path="/Advertisement" element={<Advertisement/>}/>
+                    <Route path="/Profile" element={<Profile/>}/>
+                    <Route path="/Registration" element={<Registration/>}/>
+                </Routes>
             </div>
-        </Router>
-    );
+        </UserContext.Provider>
+    </Router>)
 }
 
 export default App;
