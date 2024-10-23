@@ -11,15 +11,18 @@ import React, {useEffect, useState} from 'react';
 function App() {
     const [userId, setUserId] = useState(null);
     useEffect(() => {
-        const telegram = window.Telegram.WebApp;
-        telegram.setBackgroundColor("#ffffff");
-        let telegramUserId = window.Telegram.WebApp?.initDataUnsafe?.user?.id || 5191469996;
-        window.Telegram.WebApp.expand();
-        setUserId(telegramUserId)
+        if (window.Telegram && window.Telegram.WebApp) {
+            const telegram = window.Telegram.WebApp;
+            telegram.setBackgroundColor("#ffffff");
+            let telegramUserId = window.Telegram.WebApp?.initDataUnsafe?.user?.id || 5191469996;
+            window.Telegram.WebApp.expand();
+            setUserId(telegramUserId)
+        }
+
     }, []);
     return (<Router>
         <UserContext.Provider value={{userId, setUserId}}>
-            <div>
+            <div className={"app"}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/Catalog" element={<Catalog/>}/>
