@@ -1,0 +1,80 @@
+.seller-info {
+  padding-left: 5%;
+  max-width: 90%;
+}
+
+.seller-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #2e4924;
+    border-radius: 12px;
+    padding: 1em;
+    max-width: 100%;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .seller-info-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5em;
+  }
+  
+  .seller-avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  
+  .seller-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .seller-name {
+    font-weight: bold;
+    color: #2e4924;
+  }
+  
+  .seller-role {
+    font-size: 0.85em;
+    color: #666;
+  }
+  
+  .seller-rating {
+    display: flex;
+    align-items: center;
+    color: #ffbf00;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .star {
+    margin-right: 0.2em;
+  }
+
+  .seller-info-contact-block{
+    max-height: 59px;
+    margin-bottom: 15px;
+  }
+  
+  .seller-info-contact-button {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #2e4924;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .seller-info-contact-button:hover {
+    background-color: #224319;
+  }
+  

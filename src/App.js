@@ -20,13 +20,21 @@ function App() {
         }
 
     }, []);
+
+    const url = new URL(window.location.href);
+    console.log(url)
+    // const someVar = url.searchParams.get('someVar')
+    const adID = url.searchParams.get('adID')
+    // console.log(someVar)
+    // console.log(adID)
+
     return (<Router>
         <UserContext.Provider value={{userId, setUserId}}>
             <div className={"app"}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/Catalog" element={<Catalog/>}/>
-                    <Route path="/Advertisement" element={<Advertisement/>}/>
+                    <Route path="/Advertisement" element={<Advertisement adID = {adID}/>}/>
                     <Route path="/Profile" element={<Profile/>}/>
                     <Route path="/Registration" element={<Registration/>}/>
                 </Routes>

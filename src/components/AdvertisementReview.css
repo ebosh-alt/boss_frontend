@@ -1,0 +1,46 @@
+.review-card-block-name {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.review-card {
+  display: grid;
+  grid-template-areas:
+    "avatar username rating"
+    "text text text";
+  grid-template-columns: 25px 1fr auto; /* Ширина аватара фиксирована, остальные элементы подстраиваются */
+  background-color: #f5e9d8;
+  padding: 1em;
+  border-radius: 20px;
+  gap: 0.5em;
+  margin-bottom: 5px;
+}
+
+.reviewer-avatar {
+  grid-area: avatar;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  grid-area: username;
+  font-weight: bold;
+  color: #2c2c2c;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.review-rating {
+  grid-area: rating;
+  color: gold;
+  font-size: 25px;
+  text-align: right;
+}
+
+.review-text {
+  grid-area: text;
+  margin-top: 0.5em;
+  color: #4b4b4b;
+}
