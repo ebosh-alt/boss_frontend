@@ -1,4 +1,4 @@
-import UserContext from "../utils/contexts";
+import UserContext from "../../utils/contexts";
 import {useContext} from "react";
 
 function AdvertisementPhotos(photos, ) {

@@ -1,8 +1,8 @@
-import UserContext from "../utils/contexts";
+import UserContext from "../../utils/contexts";
 import {useContext} from "react";
-import Review from "./AdvertisementReview.js"
-import './AdvertisementReview.css';
-
+import Review from "./AdvertisementReview.js";
+import "../../styles/AdvertisementSellerInfo.css";
+import "../../styles/AdvertisementReview.css";
 
 function AdvertisementReviews({reviews}) {
 // const AdvertisementReviews({reviews}) => {
@@ -14,7 +14,7 @@ function AdvertisementReviews({reviews}) {
             </div>
             <div className="AdvertisementReviewsList">
                 {reviews.map((review) => (
-                    <Review key={review.ID} review={review} />
+                    <Review key={review.ID} review={review}/>
                 ))}
             </div>
         </div>

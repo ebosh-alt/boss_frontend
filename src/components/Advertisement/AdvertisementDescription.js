@@ -1,4 +1,4 @@
-import UserContext from "../utils/contexts";
+import UserContext from "../../utils/contexts";
 import {useContext} from "react";
 import AdvertisementPhotos from "./AdvertisementPhoto";
 import AdvertisementAbout from "./AdvertisementAbout";

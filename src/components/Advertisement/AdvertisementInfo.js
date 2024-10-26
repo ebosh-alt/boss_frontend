@@ -1,4 +1,4 @@
-import UserContext from "../utils/contexts";
+import UserContext from "../../utils/contexts";
 import {useContext} from "react";
 import AdvertisementPhotos from "./AdvertisementPhoto";
 import AdvertisementAbout from "./AdvertisementAbout";
@@ -8,9 +8,9 @@ function AdvertisementInfo(ad) {
     const {userId, setUserId} = useContext(UserContext);
     return (
         <div className="advertisementInfo">
-            <AdvertisementPhotos photos = {ad.Photos}/>
+            <AdvertisementPhotos photos={ad.Photos}/>
             <AdvertisementAbout/>
-            <AdvertisementDescription description = {ad.Description}/>
+            <AdvertisementDescription description={ad.Description}/>
         </div>
     );
 }
