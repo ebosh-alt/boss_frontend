@@ -1,9 +1,9 @@
 import UserContext from "../utils/contexts";
 import {useContext, useEffect, useState} from "react";
 import GetAdvertisementAllInfoJSON from "../services/GetAdvertisement";
-import AdvertisementInfo from "../components/AdvertisementInfo";
-import AdvertisementSellerInfo from "../components/AdvertisementSellerInfo";
-import AdvertisementReviews from "../components/AdvertisementReviews";
+import AdvertisementInfo from "../components/Advertisement/AdvertisementInfo";
+import AdvertisementSellerInfo from "../components/Advertisement/AdvertisementSellerInfo";
+import AdvertisementReviews from "../components/Advertisement/AdvertisementReviews";
 
 
 function Advertisement(adID) {
@@ -25,11 +25,11 @@ function Advertisement(adID) {
     // console.log(adID)
     if (!advertisementData) {
         return <div>Loading...</div>;
-      }
+    }
     return (
         <div className="advertisementAllInfo">
             {/* {<AdvertisementInfo ad = {advertisementData}/> */}
-            <AdvertisementSellerInfo seller = {advertisementData.User}/>
+            <AdvertisementSellerInfo seller={advertisementData.User}/>
             <AdvertisementReviews reviews={advertisementData.Reviews}/>
         </div>
     );
