@@ -1,32 +1,37 @@
 import React from 'react';
 import '../../styles/ProfileHeader.css';
+import {FaRegEdit} from "react-icons/fa";
+import {IoChevronBackOutline} from "react-icons/io5";
 
-function ProfileHeader() {
+function ProfileHeader({user}) {
     return (
-        <div className="card">
-            <div className="header">
-                <div className="backArrow">&#8592;</div>
+        <div>
+            <div className="ProfileHeader">
+                <div className="backArrow">
+                    <IoChevronBackOutline className="iconBackArrow"/>
+                </div>
                 <div className="profileInfo">
                     <div className="photoPlaceholder">
-                        <img src="camera_icon.png" alt="Camera" className="icon"/>
+                        <img src={user.PathAva} alt="Camera" className="icon"/>
                     </div>
                     <div className="nameSection">
-                        <h2 className="name">Nikita I</h2>
-                        <p className="username">@Nikita_iii</p>
+                        <h2 className="name">{user.Firstname + " " + user.Lastname}</h2>
+                        <p className="username">{user.Username}</p>
                     </div>
                     <div className="ratingSection">
                         <span className="star">&#9733;</span>
-                        <span className="rating">4.8</span>
+                        <span className="rating">{user.Rating}</span>
+                    </div>
+                    <div className="editIcon">
+                        <FaRegEdit/>
                     </div>
                 </div>
-                <div className="editIcon">&#9998;</div>
             </div>
             <div className="buttons">
-                <button className="button">Контактные данные</button>
-                <button className="button">Стать партнером</button>
+                <a href="/Profile" className="button">Контактные данные</a>
+                <a href="/Profile" className="button">Стать партнером</a>
             </div>
-        </div>
-    );
+        </div>);
 }
 
 export default ProfileHeader;

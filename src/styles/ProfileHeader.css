@@ -1,32 +1,48 @@
-.card {
-    width: 300px;
-    background-color: #e4f3d4; /* Светло-зеленый фон */
-    border-radius: 15px;
-    padding: 15px;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+.Profile {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90%;
+    font-family: "Adamina", sans-serif;
+    position: relative;
+    flex-direction: column;
+
 }
 
-.header {
+.ProfileHeader {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
 .backArrow {
-    font-size: 24px;
-    color: #2a3b1c; /* Темно-зеленый цвет */
+    display: inline-flex;
+    align-items: center;
+    font-size: 40px;
+    color: #F3E8D4;
+    background-color: #133115;
+    border-radius: 50%;
+    margin: 0 5% 0 0;
+    /*margin-left: 0;*/
 }
 
+
 .profileInfo {
+    width: 100%;
+    background-color: #92B774; /* Светло-зеленый фон */
+    border-radius: 15px;
+    padding: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-grow: 1;
-    margin-left: 10px;
-    margin-right: 10px;
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
 }
 
 .photoPlaceholder {
-    background-color: #c6e4b6;
+    background-color: #D9D9D9;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -48,13 +64,13 @@
     margin: 0;
     font-size: 18px;
     font-weight: bold;
-    color: #2a3b1c;
+    color: #133115;
 }
 
 .username {
     margin: 0;
     font-size: 14px;
-    color: #2a3b1c;
+    color: #133115;
 }
 
 .ratingSection {
@@ -72,27 +88,34 @@
     font-size: 18px;
     font-weight: bold;
     margin-left: 5px;
-    color: #2a3b1c;
+    color: #133115;
 }
 
 .editIcon {
     font-size: 20px;
-    color: #2a3b1c;
+    color: #133115;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+    display: flex;              /* Flexbox контейнер */
+    justify-content: space-between; /* Пробел между кнопками */
+    width: 100%;               /* Ширина контейнера на 100% */
+    box-sizing: border-box;    /* Включаем отступы в ширину контейнера */
+    margin-top: 5%;
+
 }
 
 .button {
-    background-color: #2a3b1c; /* Темно-зеленый цвет кнопок */
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
+    flex: 1;                   /* Занимает всю доступную ширину */
+    padding: 2%;             /* Отступы */
+    margin: 0 2%;            /* Отступы между кнопками */
+    color: #F3E8D4;
+    background-color: #133115;
+    border: none;              /* Убираем границу */
+    border-radius: 20px;       /* Закругление углов */
+    cursor: pointer;           /* Указатель курсора */
+    font-size: 11px;          /* Размер шрифта */
+    text-align: center;
+    text-decoration: none;
+
 }
