@@ -1,13 +1,21 @@
 import UserContext from "../utils/contexts";
 import {useContext} from "react";
-import AdvertisementPhotos from "./AdvertisementPhoto";
+import AdvertisementPhotos from "./AdvertisementPhotos";
 import AdvertisementAbout from "./AdvertisementAbout";
+import "../styles/AdvertisementDescription.css";
 
-function AdvertisementDescription(ad) {
+function AdvertisementDescription({description}) {
     const {userId, setUserId} = useContext(UserContext);
     return (
-        <div className="advertisementDescription">
+        <>
+        <hr className="horizont-line"/>
+        <div className="advertisement-description">
+            <div className="description-card-block-name">
+                Описание
+            </div>
+            <span>{description}</span>
         </div>
+        </>
     );
 }
 

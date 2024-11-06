@@ -1,0 +1,57 @@
+
+.advertisement-about{
+    margin-bottom: 2%;
+    color: #133115;
+}
+
+.ad-about-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.advertisement-name {
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.advertisement-price {
+    margin-right: 5%;
+    font-size: 20px;
+}
+.advertisement-price img {
+    width: 25px;
+    height: 25px;
+}
+
+.advertisement-category {
+    border: 2px solid #F3E8D4;
+    border-radius: 20px;
+    width: 90%;
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+.advertisement-location {
+    font-size: 15px;
+    margin-left: 4%;
+}
+
+.advertisement-location img {
+    width: 15px;
+    height: 15px;
+}
+
+.advertisement-views {
+    display: flex;
+    font-size: 15px;
+    margin-right: 5%;
+}
+
+.advertisement-views img{
+    width: 19px;
+    height: 19px;
+    margin-right: 5%;
+}

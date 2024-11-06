@@ -1,7 +1,7 @@
 import UserContext from "../utils/contexts";
 import {useContext} from "react";
 import Review from "./AdvertisementReview.js"
-import './AdvertisementReview.css';
+import '../styles/AdvertisementReview.css';
 
 
 function AdvertisementReviews({reviews}) {

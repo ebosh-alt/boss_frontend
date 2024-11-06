@@ -1,5 +1,5 @@
 import React from 'react';
-import './AdvertisementSellerInfo.css';
+import '../styles/AdvertisementSellerInfo.css';
 
 const AdvertisementSellerInfo = ({ seller }) => {
   const {
@@ -30,7 +30,7 @@ const AdvertisementSellerInfo = ({ seller }) => {
 
                 {/* Рейтинг */}
                 <div className="seller-rating">
-                    <span className="star">★</span> {Rating.toFixed(1)}
+                    <span className="star">★</span> <span className="rating-num">{Rating.toFixed(1)}</span>
                 </div>
             </div>
         </div>

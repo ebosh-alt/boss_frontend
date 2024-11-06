@@ -28,7 +28,8 @@ function App() {
     // console.log(someVar)
     // console.log(adID)
 
-    return (<Router>
+    return (
+    <Router>
         <UserContext.Provider value={{userId, setUserId}}>
             <div className={"app"}>
                 <Routes>

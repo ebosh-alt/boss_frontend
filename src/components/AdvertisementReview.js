@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Review = ({ review }) => {
+// const Review = ({ review }) => {
+function Review({ review }) {
   const {
     ID,
     Text,
