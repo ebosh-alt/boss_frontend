@@ -1,0 +1,186 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    color: #133115;
+}
+
+.headerTitle {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.addButton {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    background-color: #F3E8D4;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 2em;
+
+}
+
+.plusIcon {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #133115;
+    padding-left: 12px;
+}
+
+
+/*################################################################*/
+
+.profileAdvertisement {
+    flex-wrap: wrap;
+    gap: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    color: #133115;
+}
+
+/* Основные стили карточки */
+.adCard {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    height: 15em;
+    border: 3px solid #c2c2c2;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adCard.active, .adCard.inactive {
+    border-color: #F3E8D4; /* Цвет границы для завершенного объявления */
+}
+
+/* Стили для активного и завершенного состояния карточки */
+.adCard.active.advanced {
+    border-color: #92B774; /* Цвет границы для активного объявления */
+    background-color: #F9FFF4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Горизонтальное смещение, вертикальное смещение, радиус размытия, цвет тени */
+}
+
+/* Размещение текста статуса и иконки редактирования */
+.statusSection {
+    justify-content: space-between;
+    font-size: 18px;
+    padding-top: 1%;
+}
+
+.editIconAd {
+    position: absolute;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    top: 2%;
+    right: 3%;
+}
+
+/* Стили для изображения */
+.image-placeholder {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    width: 82%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 15%;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирование изображения под контейнер */
+}
+
+/* Стили для текстовой информации */
+.details {
+    position: absolute;
+    height: 5em;
+    bottom: 10%;
+}
+
+.title {
+    font-size: 18px;
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    max-width: 6em;
+}
+
+.title p {
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+    overflow: hidden; /* Обрезаем текст, который не помещается */
+    text-overflow: ellipsis; /* Добавляем многоточие для длинного текста */
+}
+
+.views {
+    font-size: 12px;
+    position: absolute;
+    bottom: 29%;
+    right: 10%;
+}
+
+.price {
+    position: absolute;
+    bottom: 13%;
+    right: 15%;
+    font-size: 18px;
+}
+
+.ruble {
+    position: absolute;
+    bottom: 19%;
+    right: 4%;
+    font-size: 22px;
+}
+
+.promoteButton {
+    position: absolute;
+    width: 80%;
+    padding: 2%;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    bottom: 1%;
+    margin-bottom: 5%;
+}
+
+/*Продвинуто*/
+.promoteButton.advanced {
+    border: 3px solid #F3E8D4;
+    background-color: #FFFFFF;
+}
+
+/*Не продвинуто*/
+.promoteButton.notAdvanced {
+    background-color: #92B774;
+}
+
+/*Продвинуто, не активно*/
+.promoteButton.advanced:disabled {
+    border: none;
+    cursor: not-allowed;
+    background-color: #F3E8D4;
+    color: #989B98;
+}
+
+/*Не продвинуто, не активно*/
+.promoteButton.notAdvanced:disabled {
+    cursor: not-allowed;
+    background-color: #F3E8D4;
+    color: #989B98;
+}

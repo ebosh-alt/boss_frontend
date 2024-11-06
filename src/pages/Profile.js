@@ -1,6 +1,9 @@
 import UserContext from "../utils/contexts";
 import {useContext, useEffect, useState} from "react";
 import ProfileHeader from "../components/Profile/ProfileHeader";
+import ProfileStatistic from "../components/Profile/ProfileStatistic";
+import ProfileReviews from "../components/Profile/ProfileReviews";
+import ProfileAdvertisement from "../components/Profile/ProfileAdvertisement";
 import GetProfile from "../services/GetProfile";
 
 function Profile() {
@@ -36,6 +39,9 @@ function Profile() {
     }
     return (<div className={"Profile"}>
         <ProfileHeader user={user}/>
+        <ProfileStatistic/>
+        <ProfileAdvertisement/>
+        <ProfileReviews/>
     </div>);
 }
 
