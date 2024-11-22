@@ -5,7 +5,6 @@ import "../../styles/AdvertisementSellerInfo.css";
 import "../../styles/AdvertisementReview.css";
 
 function AdvertisementReviews({reviews}) {
-// const AdvertisementReviews({reviews}) => {
     const {userId, setUserId} = useContext(UserContext);
     return (
         <div className="seller-info">

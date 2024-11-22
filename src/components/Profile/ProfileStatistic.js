@@ -5,7 +5,7 @@ import '../../assets/logo.svg';
 const ProfileStatistic = () => {
     return (
         <Fragment>
-            <h2>Статистика</h2>
+            <p className="headerTitle">Статистика</p>
         </Fragment>
     );
 };

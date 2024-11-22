@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import '../../styles/ProfileHeader.css';
 import {FaRegEdit} from "react-icons/fa";
 import {IoChevronBackOutline, IoStarSharp} from "react-icons/io5";
+import {ReactComponent as VerifiedIcon} from '../../assets/verified.svg';
 
 function ProfileHeader({user}) {
     return (
@@ -15,17 +16,22 @@ function ProfileHeader({user}) {
                         <img src={user.PathAva} alt="Camera" className="icon"/>
                     </div>
                     <div className="nameSection">
-                        <h2 className="name">{user.Firstname + " " + user.Lastname}</h2>
+                        <h2 className="name">{user.Firstname + " " + user.Lastname + " "}
+                            {user.Role.ID === 2 && <VerifiedIcon className="verifiedIcon"/>}
+                        </h2>
                     </div>
                     <div className="usernameSection">
                         <p className="username">{user.Username}</p>
                     </div>
                     <div className="ratingSection">
-                        <span className="star"><IoStarSharp/></span>z
+                        <span className="star"><IoStarSharp/></span>
                         <span className="rating">{user.Rating}</span>
                     </div>
                     <div className="editIcon">
                         <FaRegEdit/>
+                    </div>
+                    <div className="verifiedIcon">
+                        <VerifiedIcon/>
                     </div>
                 </div>
             </div>

@@ -68,13 +68,19 @@
     left: 20%;
 }
 
+/*.verifiedIcon {*/
+/*    width: 19px;*/
+/*    height: 19px;*/
+/*}*/
+
 .name {
     margin: 0;
     font-size: 24px;
     color: #133115;
+    font-weight: 500;
 }
 
-.usernameSection{
+.usernameSection {
     position: absolute;
     top: 65%;
     left: 5%;
@@ -82,9 +88,9 @@
 
 .username {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     color: #133115;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .ratingSection {
@@ -115,25 +121,26 @@
     left: 87%;
 }
 
+
 .buttons {
-    display: flex;              /* Flexbox контейнер */
+    display: flex; /* Flexbox контейнер */
     justify-content: space-between; /* Пробел между кнопками */
-    width: 100%;               /* Ширина контейнера на 100% */
-    box-sizing: border-box;    /* Включаем отступы в ширину контейнера */
+    width: 100%; /* Ширина контейнера на 100% */
+    box-sizing: border-box; /* Включаем отступы в ширину контейнера */
     margin-top: 5%;
 
 }
 
 .button {
-    flex: 1;                   /* Занимает всю доступную ширину */
-    padding: 2%;             /* Отступы */
-    margin: 0 2%;            /* Отступы между кнопками */
+    flex: 1; /* Занимает всю доступную ширину */
+    padding: 2%; /* Отступы */
+    margin: 0 2%; /* Отступы между кнопками */
     color: #F3E8D4;
     background-color: #133115;
-    border: none;              /* Убираем границу */
-    border-radius: 20px;       /* Закругление углов */
-    cursor: pointer;           /* Указатель курсора */
-    font-size: 11px;          /* Размер шрифта */
+    border: none; /* Убираем границу */
+    border-radius: 20px; /* Закругление углов */
+    cursor: pointer; /* Указатель курсора */
+    font-size: 11px; /* Размер шрифта */
     text-align: center;
     text-decoration: none;
 

@@ -1,4 +1,4 @@
-const GetUser = async (userID) => {
+const GetReviews = async (userID) => {
     const url = ""
     // const bodyData = {
     //     id: userID
@@ -13,10 +13,9 @@ const GetUser = async (userID) => {
         }
     } catch (error) {
         try {
-            const response = await fetch("getUser.json");
+            const response = await fetch("getReviews.json");
             if (response.ok) {
-                const userJSON = await response.json();
-                return userJSON
+                return await response.json()
             } else {
                 console.error("Ошибка запроса", response.status);
             }
@@ -25,4 +24,4 @@ const GetUser = async (userID) => {
         }
     }
 }
-export default GetUser;
+export default GetReviews;

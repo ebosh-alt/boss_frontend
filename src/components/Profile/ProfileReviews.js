@@ -1,13 +1,18 @@
-import React, {Fragment} from 'react';
-import '../../styles/ProfileReviews.css';
-import '../../assets/logo.svg';
+import "../../styles/ProfileReview.css";
+import React from "react";
+import ProfileReview from "./ProfleReview.js";
 
-const ProfileReviews = () => {
+function ProfileReviews({reviews}) {
     return (
-        <Fragment>
-            <h2>Отзывы</h2>
-        </Fragment>
+        <div className="reviews">
+            <p className="reviewTitle">Отзывы</p>
+            <div>
+                {reviews.map((review) => (
+                    <ProfileReview review={review}/>
+                ))}
+            </div>
+        </div>
     );
-};
+}
 
 export default ProfileReviews;
