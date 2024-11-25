@@ -16,15 +16,14 @@
 
 .back-button {
   position: absolute;
+  overflow: hidden;
   margin-top: 2%;
   margin-left: 2%;
-  background-color: #2e4924;
-  color: rgb(82, 15, 15);
+  background-color: #224319;
   border: none;
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +33,12 @@
 
 .back-button:hover {
   background-color: #224319;
+}
+
+.back-button-img{
+  background-color: #224319;
+  width: 36px;
+  height: 36px;
 }
 
 .slick-dots {

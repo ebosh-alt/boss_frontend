@@ -1,21 +1,5 @@
-import "../components/Registration.css"
-
-// function Registration() {
-//     return (
-//         <>
-//             <div className="section-name">
-//                 <p>Registration</p>
-//             </div>
-//             <div className="registration-user-photo-section">
-//                 <img src="./G_powerTQ2.jpg" className="registration-user-photo" />
-//                 <p className="registration-user-photo-text">Загрузите свой аватар</p>
-//             </div>
-//         </>
-//     );
-// }
-
-// export default Registration;
-
+import "../styles/Registration.css"
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 
 function Registration() {
@@ -24,7 +8,9 @@ function Registration() {
   const [firstName, setFirstName] = useState(''); // Имя пользователя
   const [lastName, setLastName] = useState(''); // Фамилия пользователя
   const [phone, setPhone] = useState(''); // Телефон пользователя
-  const [status, setStatus] = useState('buyer'); // Статус пользователя (по умолчанию покупатель)
+  const [status, setStatus] = useState('Продавец'); // Статус пользователя (по умолчанию покупатель)
+
+  const navigate = useNavigate();
 
   // Обработчик загрузки файла
   const handleFileChange = (event) => {
@@ -38,45 +24,74 @@ function Registration() {
   // Обработчик отправки формы
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!avatar || !firstName || !lastName) {
-      alert("Пожалуйста, заполните все поля.");
-      return;
+  
+    console.log(firstName)
+    if(!avatar) {
+      alert("Аватар")
+    } else if (!firstName) {
+      alert("Имя")
+    } else if(!lastName) {
+      alert("Фамилия")
+    } else if(!phone) {
+      alert("Номер")
+    } else if(!status) {
+      alert("Статус")
+    } else {
+      // alert("Все заполнено")
+      const formData = new FormData();
+      formData.append('avatar', avatar);
+      formData.append('firstName', firstName);
+      formData.append('lastName', lastName);
+      formData.append('phone', phone);
+      formData.append('status', status);
+      console.log(formData)
+      if (status==='Продавец'){
+        navigate('/Verification0');
+      } else {
+        navigate('/Catalog');
+      }
+
     }
-    // Логика отправки данных на сервер, например, через API
-    const formData = new FormData();
-    formData.append('avatar', avatar);
-    formData.append('firstName', firstName);
-    formData.append('lastName', lastName);
-    formData.append('phone', phone);
-    formData.append('status', status);
-    
+
     // Пример запроса на сервер
     // fetch('/api/register', {
     //   method: 'POST',
     //   body: formData,
     // });
+    // }
   };
+
+  function hadleClickStatusBut(status) {
+    setStatus(status)
+
+  }
+
+  function handleFirstNameChange(event) {
+    setFirstName(event.target.value)
+  }
 
   return (
     <>
       <div className='registration-section-name'>
         Регистрация
       </div>
-    <form onSubmit={handleSubmit}>
+    <form >
       <div className='registration-user-photo-section'>
         <label htmlFor="avatar-upload">
           {preview ? (
             <>
+              <div className="registration-user-photo-container">
                 <img src={preview} alt="Avatar Preview" className="registration-user-photo"/>
+              </div> 
 
-                <div className="registration-user-photo-text">
-                    Загрузите свой аватар
-                </div> 
+              <div className="registration-user-photo-text">
+                  Загрузите свой аватар
+              </div> 
             </>
           ) : (
             <>
               <div className="registration-user-photo-container">
-                <img src="./empty_logo.png" alt="Avatar Preview" className="registration-user-photo"/>
+                <img src="./svg/empty_photo_reg.svg" alt="Avatar Preview" className="registration-user-photo"/>
               </div> 
               <div className="registration-user-photo-text">
                   Загрузите свой аватар
@@ -90,7 +105,6 @@ function Registration() {
           style={{ display: 'none' }}
           accept="image/*"
           onChange={handleFileChange}
-
         />
       </div>
 
@@ -98,20 +112,20 @@ function Registration() {
         <div className="registration-flname">
           <label>
             <input
+              id='firstname-input'
               className="registration-flname-input-field"
               type="text"
               value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              required
+              onChange={handleFirstNameChange}
               placeholder='Имя'
             />    
             <div className="refistration-flname-empty-block"></div>
             <input
+              id="lastname-input"
               className="registration-flname-input-field"
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              required
               placeholder='Фамилия'
             />
           </label>
@@ -127,25 +141,61 @@ function Registration() {
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              required
               placeholder="Телефон"
             />
           </label>
         </div>
       </div>
 
-      {/* <div>
+      <div>
         <label>
-          Статус:
-          <select value={status} onChange={(e) => setStatus(e.target.value)} required>
+          {/* <select value={status} onChange={(e) => setStatus(e.target.value)} required>
             <option value="buyer">Покупатель</option>
             <option value="seller">Продавец</option>
-          </select>
+          </select> */}
+          <div className="registration-statuses">
+              <button type="button" onClick={() => hadleClickStatusBut('Продавец')} className={status === 'Продавец' ? "registration-status-but active" : "registration-status-but" }>
+                Продавец
+              </button>
+              <button type="button" onClick={() => hadleClickStatusBut('Покупатель')} className={status === 'Покупатель' ? "registration-status-but active" : "registration-status-but" }>
+                Покупатель
+              </button>
+          </div>
+          <input
+            id="status-input"
+            type="text"
+            value={status}
+            onChange={() => {}}
+            style={{ display: 'none' }} // скрываем от пользователя
+          />
         </label>
-      </div> */}
-
-      <button className="submit-registration" type="submit">Завершить регистрацию</button>
+      </div>
+      
+      {status === "Продавец" &&
+      <>
+        <div className="registration-seller-info-block">
+          <div className="registration-seller-info-verification">
+            Для обеспечения безопасности и соответствия нормативным требованиям, мы просим вас пройти верификацию личности. 
+          </div>
+          <div className="registration-seller-info-verification">
+            Этот процесс занимает всего несколько минут.
+          </div>
+          <div className="registration-seller-info-agreement">
+            При нажатии, вы завершите регистрацию и приступите к прохождению верификацию личности.
+          </div>
+        </div>
+      </>
+      }
+      <button className="submit-registration" type="submit" onClick={handleSubmit}>
+        {status === "Покупатель" && 'Завершить регистрацию'}
+        {status === "Продавец" && 'Завершить регистрацию и пройти верификацию'}
+      </button>
     </form>
+    <div className="registration-legel-info-block">
+      <a href="https://ru.wikipedia.org/wiki/%D0%AE%D1%80%D0%B8%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%BB%D0%B8%D1%86%D0%BE" className="registration-legel-info">
+        Юридическая информация
+      </a>
+    </div>
     </>
   );
 };
