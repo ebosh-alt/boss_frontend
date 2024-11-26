@@ -13,7 +13,7 @@ const GetUser = async (userID) => {
         }
     } catch (error) {
         try {
-            const response = await fetch("getUser.json");
+            const response = await fetch("jsons/getUser.json");
             if (response.ok) {
                 const userJSON = await response.json();
                 return userJSON
