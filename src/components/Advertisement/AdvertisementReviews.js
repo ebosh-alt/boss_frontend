@@ -1,8 +1,8 @@
 import UserContext from "../../utils/contexts";
 import {useContext} from "react";
-import Review from "./AdvertisementReview.js";
-import "../../styles/AdvertisementSellerInfo.css";
-import "../../styles/AdvertisementReview.css";
+import Review from "./AdvertisementReview.js"
+import '../styles/AdvertisementReview.css';
+
 
 function AdvertisementReviews({reviews}) {
     const {userId, setUserId} = useContext(UserContext);
