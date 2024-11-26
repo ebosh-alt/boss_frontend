@@ -7,6 +7,7 @@ import Advertisement from "./pages/Advertisement";
 import Home from "./pages/Home";
 import UserContext from "./utils/contexts";
 import React, {useEffect, useState} from 'react';
+import AddAdvertisement from "./pages/AddAdvertisement";
 
 function App() {
     const [userId, setUserId] = useState(null);
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/Advertisement" element={<Advertisement adID={adID}/>}/>
                     <Route path="/Profile" element={<Profile/>}/>
                     <Route path="/Registration" element={<Registration/>}/>
+                    <Route path="/AddAdvertisement" element={<AddAdvertisement/>}/>
                 </Routes>
             </div>
         </UserContext.Provider>

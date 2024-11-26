@@ -11,13 +11,15 @@ const ProfileAdvertisement = ({status, title, views, price, isActive}) => {
             {id: 3, isActive: true, title: 'Название', views: 84, price: '12.345.678', isAdvanced: false},
             {id: 4, isActive: true, title: 'Название', views: 10, price: '12.345.678', isAdvanced: true},
         ];
-
+        const handleClick = () => {
+            window.location.href = '/AddAdvertisement';
+        };
         return (
             <div>
                 <div className="header">
                     <p className="headerTitle">Мои объявления</p>
-                    <button className="addButton">
-                        Добавить <span className="plusIcon"><GoPlus/></span>
+                    <button className="addButton" onClick={handleClick}>
+                            Добавить <span className="plusIcon"><GoPlus/></span>
                     </button>
                 </div>
 

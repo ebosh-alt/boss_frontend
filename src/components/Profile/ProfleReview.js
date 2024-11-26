@@ -9,13 +9,11 @@ const ProfileReview = ({review}) => {
             PathAva,
             ID: reviewerID,
             Username,
-            Firstname,
-            // Role: {ID: roleID}
+            Firstname
         }
     } = review;
 
     const displayName = Firstname || Username;
-    // const checkmarkColor = roleID === 1 ? '' : roleID === 2 ? 'yellow' : 'green';
 
     return (
         <div className="reviewCard">

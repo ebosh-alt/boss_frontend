@@ -7,7 +7,6 @@
     font-family: "Adamina", sans-serif;
     position: relative;
     flex-direction: column;
-
 }
 
 .ProfileHeader {
@@ -24,7 +23,6 @@
     background-color: #133115;
     border-radius: 50%;
     margin: 0 5% 0 0;
-    /*margin-left: 0;*/
 }
 
 
@@ -67,11 +65,6 @@
     top: 13px;
     left: 20%;
 }
-
-/*.verifiedIcon {*/
-/*    width: 19px;*/
-/*    height: 19px;*/
-/*}*/
 
 .name {
     margin: 0;
@@ -128,7 +121,6 @@
     width: 100%; /* Ширина контейнера на 100% */
     box-sizing: border-box; /* Включаем отступы в ширину контейнера */
     margin-top: 5%;
-
 }
 
 .button {
@@ -143,5 +135,4 @@
     font-size: 11px; /* Размер шрифта */
     text-align: center;
     text-decoration: none;
-
 }
