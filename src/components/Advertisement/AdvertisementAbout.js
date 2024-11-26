@@ -1,6 +1,6 @@
 import UserContext from "../../utils/contexts";
 import {useContext} from "react";
-import "../styles/AdvertisementAbout.css"
+import "../../styles/Advertisement/AdvertisementAbout.css"
 
 function AdvertisementAbout( {ad} ) {
     const {userId, setUserId} = useContext(UserContext);

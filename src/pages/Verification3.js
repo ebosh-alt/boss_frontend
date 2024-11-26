@@ -1,5 +1,5 @@
 // import UserContext from "../utils/contexts";
-import "./Verification.css"
+import "../styles/Verification/Verification.css"
 import {useContext, useState} from "react";
 import { useNavigate } from 'react-router-dom';
 

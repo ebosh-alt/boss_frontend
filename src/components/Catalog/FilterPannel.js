@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import "../styles/FilterPannel.css";
-import Selector from './Selector';
+import "../../styles/Catalog/FilterPannel.css";
+import Selector from '../../services/Selector';
 
 const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, setPriceRange, location, setLocation }) => {
     // const [sortOrder, setSortOrder] = useState('');

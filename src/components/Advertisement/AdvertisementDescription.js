@@ -2,7 +2,7 @@ import UserContext from "../../utils/contexts";
 import {useContext} from "react";
 import AdvertisementPhotos from "./AdvertisementPhotos";
 import AdvertisementAbout from "./AdvertisementAbout";
-import "../styles/AdvertisementDescription.css";
+import "../../styles/Advertisement/AdvertisementDescription.css";
 
 function AdvertisementDescription({description}) {
     const {userId, setUserId} = useContext(UserContext);

@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import '../../styles/ProfileHeader.css';
+import '../../styles/Profile/ProfileHeader.css';
 import {FaRegEdit} from "react-icons/fa";
 import {IoChevronBackOutline, IoStarSharp} from "react-icons/io5";
 import {ReactComponent as VerifiedIcon} from '../../assets/verified.svg';

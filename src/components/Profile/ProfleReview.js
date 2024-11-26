@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/ProfileReview.css";
+import "../../styles/Profile/ProfileReview.css";
 
 const ProfileReview = ({review}) => {
     const {

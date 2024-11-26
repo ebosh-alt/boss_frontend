@@ -1,13 +1,22 @@
-import React, {Fragment} from 'react';
-import '../../styles/HeaderProfile.css';
-import '../../assets/logo.svg';
+import "../../styles/Catalog/Catalog.css"
+import { useNavigate } from 'react-router-dom';
 
-const HeaderProfile = () => {
+
+function CatalogHeader() {
+    const navigate = useNavigate();
+
     return (
-        <Fragment>
+        <div className="catalog-header-block">
+            <img className="catalog-header-img" src="./svg/logo.svg"/>
 
-        </Fragment>
-    );
-};
+            {/* <img className="catalog-header-img" src="CatalogHeader.png" alt="Catalog Header" /> */}
+            <a onClick={() => navigate('/')} className="catalog-header-profile">
+                <div>
+                    Name
+                </div>
+            </a>
+        </div>
+    )
+}
 
-export default HeaderProfile;
+export default CatalogHeader

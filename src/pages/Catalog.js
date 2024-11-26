@@ -1,7 +1,7 @@
-import CatalogHeader from "../components/CatalogHeader.js"
-import CatalogSettings from "../components/CatalogSettings.js";
+import CatalogHeader from "../components/Catalog/CatalogHeader.js"
+import CatalogSettings from "../components/Catalog/CatalogSettings.js";
 import { useState } from 'react';
-import FilterPanel from "../components/FilterPannel.js";
+import FilterPanel from "../components/Catalog/FilterPannel.js";
 
 function Catalog() {
     const [sortOrder, setSortOrder] = useState('');

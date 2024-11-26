@@ -1,10 +1,10 @@
-import "../styles/Catalog.css"
+import "../../styles/Catalog/Catalog.css"
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 // import FilterPanel from "./FilterPannel";
 // import { IoFilter } from "react-icons/io5";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import Selector from "./Selector";
+import Selector from "../../services/Selector.js";
 
 
 

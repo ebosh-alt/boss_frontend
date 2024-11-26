@@ -1,4 +1,4 @@
-import "../styles/Registration.css"
+import "../styles/Registration/Registration.css"
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 

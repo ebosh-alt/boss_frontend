@@ -3,7 +3,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import "../styles/AdvertisementPhotos.css"
+import "../../styles/Advertisement/AdvertisementPhotos.css"
 import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react';
 
