@@ -1,32 +1,46 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import '../../styles/ProfileHeader.css';
+import {FaRegEdit} from "react-icons/fa";
+import {IoChevronBackOutline, IoStarSharp} from "react-icons/io5";
+import {ReactComponent as VerifiedIcon} from '../../assets/verified.svg';
 
-function ProfileHeader() {
+function ProfileHeader({user}) {
     return (
-        <div className="card">
-            <div className="header">
-                <div className="backArrow">&#8592;</div>
+        <Fragment>
+            <div className="ProfileHeader">
+                <div className="backArrow">
+                    <IoChevronBackOutline className="iconBackArrow"/>
+                </div>
                 <div className="profileInfo">
                     <div className="photoPlaceholder">
-                        <img src="camera_icon.png" alt="Camera" className="icon"/>
+                        <img src={user.PathAva} alt="Camera" className="icon"/>
                     </div>
                     <div className="nameSection">
-                        <h2 className="name">Nikita I</h2>
-                        <p className="username">@Nikita_iii</p>
+                        <h2 className="name">{user.Firstname + " " + user.Lastname + " "}
+                            {user.Role.ID === 2 && <VerifiedIcon className="verifiedIcon"/>}
+                        </h2>
+                    </div>
+                    <div className="usernameSection">
+                        <p className="username">{user.Username}</p>
                     </div>
                     <div className="ratingSection">
-                        <span className="star">&#9733;</span>
-                        <span className="rating">4.8</span>
+                        <span className="star"><IoStarSharp/></span>
+                        <span className="rating">{user.Rating}</span>
+                    </div>
+                    <div className="editIcon">
+                        <FaRegEdit/>
+                    </div>
+                    <div className="verifiedIcon">
+                        <VerifiedIcon/>
                     </div>
                 </div>
-                <div className="editIcon">&#9998;</div>
             </div>
             <div className="buttons">
-                <button className="button">Контактные данные</button>
-                <button className="button">Стать партнером</button>
+                <a href="/Profile" className="button">Контактные данные</a>
+                {user.Role.ID === 0 && <a href="/Profile" className="button">Стать продавцом</a>}
+                {user.Role.ID === 1 && <a href="/Profile" className="button">Стать партнером</a>}
             </div>
-        </div>
-    );
+        </Fragment>);
 }
 
 export default ProfileHeader;
