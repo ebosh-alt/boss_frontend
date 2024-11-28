@@ -10,7 +10,7 @@ function CatalogHeader() {
             <img className="catalog-header-img" src="./svg/logo.svg"/>
 
             {/* <img className="catalog-header-img" src="CatalogHeader.png" alt="Catalog Header" /> */}
-            <a onClick={() => navigate('/')} className="catalog-header-profile">
+            <a onClick={() => navigate('/Profile')} className="catalog-header-profile">
                 <div>
                     Name
                 </div>

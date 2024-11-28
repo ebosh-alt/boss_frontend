@@ -3,12 +3,14 @@ import '../../styles/Profile/ProfileHeader.css';
 import {FaRegEdit} from "react-icons/fa";
 import {IoChevronBackOutline, IoStarSharp} from "react-icons/io5";
 import {ReactComponent as VerifiedIcon} from '../../assets/verified.svg';
+import { useNavigate } from 'react-router-dom';
 
 function ProfileHeader({user}) {
+    const navigate = useNavigate()
     return (
         <Fragment>
             <div className="ProfileHeader">
-                <div className="backArrow">
+                <div className="backArrow" onClick={() => navigate("/Catalog")}>
                     <IoChevronBackOutline className="iconBackArrow"/>
                 </div>
                 <div className="profileInfo">

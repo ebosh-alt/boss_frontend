@@ -60,7 +60,7 @@ d_ad = {
             }
         },
         {
-            "ID": 5,
+            "ID": 6,
             "Text": "erdeferde",
             "Mark": 3,
             "Reviewer": {
@@ -119,7 +119,7 @@ d_catalog = [
         "Name": "Охотничье ружье",
         "Price": 19000,
         "Location": "г. Москва",
-        "TypePromotionID": 1,
+        "TypePromotionID": 2,
     },
     {
         "ID": 3,
@@ -127,7 +127,7 @@ d_catalog = [
         "Name": "Охотничье ружье",
         "Price": 20000,
         "Location": "г. Москва",
-        "TypePromotionID": 1,
+        "TypePromotionID": 3,
     },
     {
         "ID": 4,
@@ -198,6 +198,6 @@ def save_data(data, file_path):
 
 if __name__ == "__main__":
     print (d_ad)
-    save_data(d_ad, f"./public/{f_ad_path}")
+    save_data(d_ad, f"./public/jsons/{f_ad_path}")
     print (d_catalog)
-    save_data(d_catalog, f"./public/{f_catalog_path}")
+    save_data(d_catalog, f"./public/jsons/{f_catalog_path}")

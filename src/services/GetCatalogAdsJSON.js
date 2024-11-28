@@ -1,10 +1,9 @@
 // import { json } from "react-router-dom";
 
 
-const GetAdvertisementAllInfoJSON = async (adID) => {
+const GetCatalogAdsJSON = async () => {
     const url = ""
     const bodyData = {
-        id: adID
     }
     try {
         const response = await fetch(url, {method: "GET" });
@@ -17,12 +16,11 @@ const GetAdvertisementAllInfoJSON = async (adID) => {
         }
     } catch (error) {
         try {
-            const response = await fetch("jsons/getAdAllInfo.json");
+            const response = await fetch("jsons/getCatalog.json");
             if (response.ok) {
-                console.log("23")
-                const advertisementJSON = await response.json();
-                console.log("23", advertisementJSON)
-                return advertisementJSON
+                const catalogAdsJSON = await response.json();
+                console.log("23", catalogAdsJSON)
+                return catalogAdsJSON
             } else {
                 console.error("Ошибка запроса", response.status);
             }
@@ -31,4 +29,4 @@ const GetAdvertisementAllInfoJSON = async (adID) => {
         }
     }
 }
-export default GetAdvertisementAllInfoJSON
+export default GetCatalogAdsJSON
