@@ -1,6 +1,6 @@
 import React from 'react';
-import "../../styles/AdvertisementSellerInfo.css";
-import "../../styles/AdvertisementReview.css";
+import "../../styles/Advertisement/AdvertisementSellerInfo.css";
+import "../../styles/Advertisement/AdvertisementReview.css";
 
 const AdvertisementSellerInfo = ({seller}) => {
     const {

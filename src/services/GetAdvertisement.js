@@ -17,7 +17,7 @@ const GetAdvertisementAllInfoJSON = async (adID) => {
         }
     } catch (error) {
         try {
-            const response = await fetch("getAdAllInfo.json");
+            const response = await fetch("jsons/getAdAllInfo.json");
             if (response.ok) {
                 console.log("23")
                 const advertisementJSON = await response.json();

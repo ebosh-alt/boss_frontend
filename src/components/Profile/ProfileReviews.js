@@ -1,4 +1,4 @@
-import "../../styles/ProfileReview.css";
+import "../../styles/Profile/ProfileReview.css";
 import React from "react";
 import ProfileReview from "./ProfleReview.js";
 

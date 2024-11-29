@@ -13,7 +13,7 @@ const GetReviews = async (userID) => {
         }
     } catch (error) {
         try {
-            const response = await fetch("getReviews.json");
+            const response = await fetch("jsons/getReviews.json");
             if (response.ok) {
                 return await response.json()
             } else {

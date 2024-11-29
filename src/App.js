@@ -7,6 +7,10 @@ import Advertisement from "./pages/Advertisement";
 import Home from "./pages/Home";
 import UserContext from "./utils/contexts";
 import React, {useEffect, useState} from 'react';
+import Verification0 from "./pages/Verification0"
+import Verification1 from "./pages/Verification1"
+import Verification2 from './pages/Verification2';
+import Verification3 from './pages/Verification3';
 import AddAdvertisement from "./pages/AddAdvertisement";
 
 function App() {
@@ -39,6 +43,10 @@ function App() {
                     <Route path="/Profile" element={<Profile/>}/>
                     <Route path="/Registration" element={<Registration/>}/>
                     <Route path="/AddAdvertisement" element={<AddAdvertisement/>}/>
+                    <Route path="/Verification0" element={<Verification0/>}/>
+                    <Route path="/Verification1" element={<Verification1/>}/>
+                    <Route path="/Verification2" element={<Verification2/>}/>/
+                    <Route path="/Verification3" element={<Verification3/>}/>
                 </Routes>
             </div>
         </UserContext.Provider>

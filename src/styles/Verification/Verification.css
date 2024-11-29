@@ -1,0 +1,244 @@
+/* .verification-kyc-0{
+    
+} */
+
+.verification-kyc-0-firstl{
+    width: 95%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.verification-kyc-0-secondl{
+    width: 85%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #F3E8D4;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.verification-kyc-0-thirdl {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.verification-kyc-0-thirdl-block {
+    margin-bottom: 10px;
+}
+.verification-kyc-0-thirdl-icon-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.verification-kyc-0-thirdl-icon {
+    width: 50px;
+}
+
+.verification-kyc-0-thirdl-stage {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #9E8557;
+    margin-bottom: 5px;
+}
+
+.verification-kyc-0-thirdl-stage-text {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    font-size: 12px;
+    color: #133115;
+}
+
+
+.verification-kyc-0-fourthl{
+    width: 90%;
+    font-size: 11px;
+    color: #92B774;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.verification-kyc-0-fourthl span{
+    margin: 5px;
+}
+
+.verification-kyc-0-fifthl{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.verification-kyc-0-fifthl-but-block{
+    width: 90%;
+    height: 35px;
+    border: 2px solid #133115;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verification-kyc-0-fifthl-but-block.active{
+    width: 90%;
+    height: 31px;
+    border: 2px solid #133115;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F3E8D4;
+    background-color: #133115;
+
+}
+
+.verification-kyc-1{
+    color: #133115;
+}
+
+.verification-kyc-1-line{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 2.5%;
+    font-size: 20px;
+}
+
+.verification-kyc-progress-bar{
+    width: 70%;
+    box-shadow: 0;
+    margin-top: 5px;
+}
+
+.verification-kyc-1-warning{
+    width: 92%;
+    height: 30px;
+    border: 1px solid #ED4E45;
+    border-radius: 5px;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.verification-kyc-1-warning-icon{
+    margin-left: 5px;
+}
+.verification-kyc-1-warning-text{
+    margin-right: 5px;
+}
+
+.verification-kyc-1-input-passport-1{
+    width: 52.5%;
+    margin-left: 22.5%;
+}
+
+.verification-kyc-1-line-text {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+.f{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.s{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.th{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+.verification-kyc-1-line-advice{
+    width: 87.5%;
+    margin-left: 6.25%;
+    border: 1px solid #92B774;
+    border-radius: 15px;
+}
+
+.verification-kyc-1-advice{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #92B774;
+}
+
+.verification-kyc-1-advice-text{
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #133115;
+}
+
+.input-passport{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.verification-kyc-1-continue-but{
+    width: 80%;
+    height: 31px;
+    margin-left: 10%;
+    border: 2px solid #133115;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F3E8D4;
+    background-color: #133115;
+    font-size: 12px;
+}
+
+.verification-kyc-1-input-selfie-1{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.empty{
+    margin-bottom: 25px;
+}
+
+.verification-kyc-1-line-input-photo-but{
+    width: 76%;
+    height: 35px;
+    margin-left: 12%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #92B774;
+    color: #133115;
+    font-size: 12px;
+}
+
+.fourth{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 25px;
+    color: #9E8557;
+}

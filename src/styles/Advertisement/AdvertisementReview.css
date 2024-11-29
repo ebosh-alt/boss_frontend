@@ -1,7 +1,8 @@
 .review-card-block-name {
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin-bottom: 1%;
+  margin-left: 1%;
   font-size: 20px;
+  color: #133115;
 }
 .review-card {
   display: grid;

@@ -1,6 +1,6 @@
 import json
 
-d= {
+d_ad = {
     "ID": 1,
     "User": {
         "ID": 1,
@@ -84,267 +84,112 @@ d= {
                 "DateDeal": "0001-01-01T00:00:00Z"
             }
         },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 5,
-            "Text": "erdeferde",
-            "Mark": 3,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 1,
-            "Text": "Отличная сделка! Рекомендую продавца.",
-            "Mark": 5,
-            "Reviewer": {
-                "ID": 2,
-                "PathAva": "",
-                "Username": "regular_user",
-                "Firstname": "Петр",
-                "Lastname": "Петров",
-                "NumberPhone": "79111234567",
-                "Rating": 5,
-                "VerificationStatus": "unverified",
-                "Role": {
-                    "ID": 2,
-                    "Name": "Пользователь"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        },
-        {
-            "ID": 6,
-            "Text": "dxtcfgvjhk",
-            "Mark": 4,
-            "Reviewer": {
-                "ID": 4,
-                "PathAva": "",
-                "Username": "moderator_user",
-                "Firstname": "Анна",
-                "Lastname": "Кузнецова",
-                "NumberPhone": "79113456789",
-                "Rating": 4.9,
-                "VerificationStatus": "verified",
-                "Role": {
-                    "ID": 3,
-                    "Name": "Модератор"
-                }
-            },
-            "Deal": {
-                "ID": 0,
-                "AdvertisementID": 0,
-                "BuyerID": 0,
-                "DateDeal": "0001-01-01T00:00:00Z"
-            }
-        }
     ],
     "Photos": [
         {
             "ID": 0,
-            "Path": "/images/phone.jpg",
+            "Path": "./G_powerTQ2.jpg",
+            "AdvertisementID": 0
+        },
+        {
+            "ID": 1,
+            "Path": "./фото.jpeg",
+            "AdvertisementID": 0
+        },
+        {
+            "ID": 2,
+            "Path": "./фото2.jpg",
             "AdvertisementID": 0
         }
     ]
 }
 
-f_path = "getAdAllInfo.json"
+d_catalog = [
+    {
+        "ID": 1,
+        "PhotoPath": "adphotopath1.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 18000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 2,
+        "PhotoPath": "adphotopath2.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 19000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 3,
+        "PhotoPath": "adphotopath3.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 20000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 4,
+        "PhotoPath": "adphotopath4.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 17000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 5,
+        "PhotoPath": "adphotopath5.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 16000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 6,
+        "PhotoPath": "adphotopath6.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 15000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 7,
+        "PhotoPath": "adphotopath7.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 14000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 8,
+        "PhotoPath": "adphotopath8.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 13000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 9,
+        "PhotoPath": "adphotopath9.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 12000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+    {
+        "ID": 10,
+        "PhotoPath": "adphotopath10.jpg",
+        "Name": "Охотничье ружье",
+        "Price": 180000,
+        "Location": "г. Москва",
+        "TypePromotionID": 1,
+    },
+]
+
+f_ad_path = "getAdAllInfo.json"
+
+f_catalog_path = "getCatalog.json"
 
 def save_data(data, file_path):
     with open(file_path, "w+") as f:
@@ -352,5 +197,7 @@ def save_data(data, file_path):
         f.write(jdata)
 
 if __name__ == "__main__":
-    print (d)
-    save_data(d, f"./test/json/{f_path}")
+    print (d_ad)
+    save_data(d_ad, f"./public/{f_ad_path}")
+    print (d_catalog)
+    save_data(d_catalog, f"./public/{f_catalog_path}")

@@ -1,0 +1,23 @@
+.description-card-block-name {
+    margin-bottom: 1%;
+    margin-left: 1%;
+    font-size: 20px;
+  }
+
+.description-text {
+    margin-bottom: 1%;
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+.advertisement-description {
+  padding-left: 5%;
+  max-width: 90%;
+  margin-bottom: 2%;
+  color: #133115;
+}
+
+.horizont-line {
+    border: 1px solid #000;
+    width: 100%;
+}

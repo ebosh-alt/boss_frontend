@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import '../../styles/ProfileStatistic.css';
+import '../../styles/Profile/ProfileStatistic.css';
 import '../../assets/logo.svg';
 
 const ProfileStatistic = () => {

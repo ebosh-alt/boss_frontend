@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/ProfileAdvertisement.css';
+import '../../styles/Profile/ProfileAdvertisement.css';
 import '../../assets/logo.svg';
 import ProfileAdvertisementCard from "./ProfileAdvertisementCard";
 import {GoPlus} from "react-icons/go";

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/ProfileAdvertisement.css';
+import '../../styles/Profile/ProfileAdvertisement.css';
 import {BsEye} from "react-icons/bs";
 import {TbEdit} from "react-icons/tb";
 import {LiaRubleSignSolid} from "react-icons/lia";
