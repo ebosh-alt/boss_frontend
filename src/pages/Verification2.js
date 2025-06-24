@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Verification2() {
-    // const {userId, setUserId} = useContext(UserContext);
     const navigate = useNavigate();
 
     function hadleClickContinueBut() {
@@ -31,7 +30,7 @@ function Verification2() {
                     Совет
                 </div>
                 <div className="verification-kyc-1-advice-text">
-                    Текст.
+                    Лицо должно быть в центре. Избегайте вспышек и бликов.
                 </div>
             </div>
             <div className="verification-kyc-1-continue-but" onClick={() => hadleClickContinueBut()}>

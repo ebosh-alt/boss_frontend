@@ -59,7 +59,7 @@
 .verification-kyc-0-fourthl{
     width: 90%;
     font-size: 11px;
-    color: #92B774;
+    color: #F8E68F;
     text-align: center;
     margin-left: 5%;
     margin-top: 40px;
@@ -172,7 +172,7 @@
 .verification-kyc-1-line-advice{
     width: 87.5%;
     margin-left: 6.25%;
-    border: 1px solid #92B774;
+    border: 1px solid #F8E68F;
     border-radius: 15px;
 }
 
@@ -180,7 +180,7 @@
     margin-top: 2px;
     margin-left: 5px;
     font-size: 14px;
-    color: #92B774;
+    color: #F8E68F;
 }
 
 .verification-kyc-1-advice-text{
@@ -231,7 +231,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #92B774;
+    background-color: #F8E68F;
     color: #133115;
     font-size: 12px;
 }

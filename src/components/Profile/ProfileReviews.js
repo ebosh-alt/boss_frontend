@@ -8,7 +8,7 @@ function ProfileReviews({reviews}) {
             <p className="reviewTitle">Отзывы</p>
             <div>
                 {reviews.map((review) => (
-                    <ProfileReview review={review}/>
+                    <ProfileReview key={review.ID} review={review}/>
                 ))}
             </div>
         </div>

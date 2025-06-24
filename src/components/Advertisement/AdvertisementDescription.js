@@ -1,11 +1,6 @@
-import UserContext from "../../utils/contexts";
-import {useContext} from "react";
-import AdvertisementPhotos from "./AdvertisementPhotos";
-import AdvertisementAbout from "./AdvertisementAbout";
 import "../../styles/Advertisement/AdvertisementDescription.css";
 
 function AdvertisementDescription({description}) {
-    const {userId, setUserId} = useContext(UserContext);
     return (
         <>
         <hr className="horizont-line"/>

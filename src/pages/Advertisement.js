@@ -1,4 +1,3 @@
-import UserContext from "../utils/contexts";
 import {useContext, useEffect, useState, Fragment} from "react";
 import GetAdvertisementAllInfoJSON from "../services/GetAdvertisement";
 import AdvertisementInfo from "../components/Advertisement/AdvertisementInfo";
@@ -7,7 +6,6 @@ import AdvertisementReviews from "../components/Advertisement/AdvertisementRevie
 
 
 function Advertisement(adID) {
-    const {userId, setUserId} = useContext(UserContext); // для всех (область виждимости)
     const [advertisementData, setAdvertisement] = useState(null) // Только для компонента (область виждимости)
 
     useEffect(() => {

@@ -14,17 +14,17 @@ function ProfileHeader({user}) {
                     <IoChevronBackOutline className="iconBackArrow"/>
                 </div>
                 <div className="profileInfo">
-                    <div className="photoPlaceholder">
+                    {/* <div className="photoPlaceholder">
                         <img src={user.PathAva} alt="Camera" className="icon"/>
-                    </div>
+                    </div> */}
                     <div className="nameSection">
-                        <h2 className="name">{user.Firstname + " " + user.Lastname + " "}
-                            {user.Role.ID === 2 && <VerifiedIcon className="verifiedIcon"/>}
+                        <h2 className="name">{user.firstName + " " + user.lastName + " "}
+                            {user.status === 'Продавец' && <VerifiedIcon className="verifiedIcon"/>}
                         </h2>
                     </div>
-                    <div className="usernameSection">
+                    {/* <div className="usernameSection">
                         <p className="username">{user.Username}</p>
-                    </div>
+                    </div> */}
                     <div className="ratingSection">
                         <span className="star"><IoStarSharp/></span>
                         <span className="rating">{user.Rating}</span>
@@ -32,15 +32,15 @@ function ProfileHeader({user}) {
                     <div className="editIcon">
                         <FaRegEdit/>
                     </div>
-                    <div className="verifiedIcon">
+                    {/* <div className="verifiedIcon">
                         <VerifiedIcon/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="buttons">
-                <a href="/Profile" className="button">Контактные данные</a>
+                {/* <a href="/Profile" className="button">Контактные данные</a>
                 {user.Role.ID === 0 && <a href="/Profile" className="button">Стать продавцом</a>}
-                {user.Role.ID === 1 && <a href="/Profile" className="button">Стать партнером</a>}
+                {user.Role.ID === 1 && <a href="/Profile" className="button">Стать партнером</a>} */}
             </div>
         </Fragment>);
 }

@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Verification3() {
-    // const {userId, setUserId} = useContext(UserContext);
     const navigate = useNavigate();
 
     function hadleClickContinueBut() {

@@ -1,12 +1,25 @@
 // import { json } from "react-router-dom";
+import { config } from '../Config';
 
 
-const GetCatalogAdsJSON = async () => {
-    const url = ""
+const GetCatalogAdsJSON = async (gender, subcategory) => {
+    console.log(gender, subcategory)
+    const url = new URL(`${config.apiBaseUrl}/api/ads`)
+    const searchParams = new URLSearchParams();
+    if (subcategory) {
+      searchParams.append('subcategory_id', subcategory.id);
+    }
+
+    if (gender) {
+      searchParams.append('?gender', gender);
+    }
+
+    url.search = searchParams.toString();
+
     const bodyData = {
     }
     try {
-        const response = await fetch(url, {method: "GET" });
+        const response = await fetch(url, {headers: { 'Content-Type': 'application/json'}, method: "GET" });
         if (response.ok) {
             const advertisementJSON = await response.json();
             return advertisementJSON 

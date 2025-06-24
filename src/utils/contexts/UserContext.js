@@ -1,10 +1,9 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const UserContext = createContext();
 
 export function UserProvider({ children }) {
   const [user, setUser] = useState(() => {
-    // Загружаем из localStorage при инициализации
     const saved = localStorage.getItem('user');
     return saved ? JSON.parse(saved) : null;
   });

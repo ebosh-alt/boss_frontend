@@ -12,29 +12,40 @@ import Verification1 from "./pages/Verification1"
 import Verification2 from './pages/Verification2';
 import Verification3 from './pages/Verification3';
 
+import { UserProvider } from './utils/contexts/UserContext';
+
 function App() {
     const [userId, setUserId] = useState(null);
-    useEffect(() => {
-        if (window.Telegram && window.Telegram.WebApp) {
-            const telegram = window.Telegram.WebApp;
-            telegram.setBackgroundColor("#ffffff");
-            let telegramUserId = window.Telegram.WebApp?.initDataUnsafe?.user?.id || 5191469996;
-            window.Telegram.WebApp.expand();
-            setUserId(telegramUserId)
-        }
+    
+    // useEffect(() => {
+    //     if (window.Telegram && window.Telegram.WebApp) {
+    //         const telegram = window.Telegram.WebApp;
+    //         telegram.setBackgroundColor("#ffffff");
+    //         let telegramUserId = window.Telegram.WebApp?.initDataUnsafe?.user?.id !== null || 1;
+    //         window.Telegram.WebApp.expand();
+    //         setUserId(telegramUserId)
+    //     }
 
-    }, []);
+    // }, []);
+
+    // useEffect(() => {
+    //     // Парсим query-параметры из URL
+    //     const queryParams = new URLSearchParams(location.search);
+    //     const adID = queryParams.get('adID'); // Получаем значение adID
+
+    //     console.log('adID:', adID); // Выведет "1" для ?adID=1
+    // }, [location.search]);
+    // // TODO: Функция получения профиля
 
     const url = new URL(window.location.href);
     console.log(url)
-    // const someVar = url.searchParams.get('someVar')
+    console.log(userId)
     const adID = url.searchParams.get('adID')
-    // console.log(someVar)
-    // console.log(adID)
 
     return (
+            <UserProvider>
+
     <Router>
-        <UserContext.Provider value={{userId, setUserId}}>
             <div className={"app"}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
@@ -48,8 +59,8 @@ function App() {
                     <Route path="/Verification3" element={<Verification3/>}/>
                 </Routes>
             </div>
-        </UserContext.Provider>
-    </Router>)
-}
+    </Router>
+            </UserProvider>
+)}
 
 export default App;

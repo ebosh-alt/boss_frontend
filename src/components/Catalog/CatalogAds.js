@@ -2,11 +2,10 @@ import React from 'react';
 import CatalogAdCard from './CatalogAdCard';
 
 
-const CatalogAds = ({ads, catalogAds, handleClickOnCatalogAd}) => {
+const CatalogAds = ({catalogAds, handleClickOnCatalogAd}) => {
 
         return (
-            <div className="catalog-advertisements">
-                <div className="catalog-advertisements-line-of-two">
+            <div className="catalog-feed-block">
                     {catalogAds.map((ad) => (
                         <CatalogAdCard
                             key={ad.ID}
@@ -19,7 +18,6 @@ const CatalogAds = ({ads, catalogAds, handleClickOnCatalogAd}) => {
                             handleClickOnCatalogAd={handleClickOnCatalogAd}
                         />
                     ))}
-                </div>
             </div>
         );
     }

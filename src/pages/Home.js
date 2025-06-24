@@ -1,9 +1,6 @@
-import UserContext from "../utils/contexts";
-import {useContext} from "react";
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
-    const {userId, setUserId} = useContext(UserContext);
     const navigate = useNavigate();
 
     return (

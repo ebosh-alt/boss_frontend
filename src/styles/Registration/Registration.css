@@ -102,13 +102,13 @@
     width: 170px;
     border-radius: 20px;
     background-color: #fff;
-    border: 2px solid #92B774;
+    border: 2px solid #F8E68F;
 }
 .registration-status-but.active {
     width: 170px;
     border-radius: 20px;
-    background-color: #92B774;
-    border: 2px solid #92B774;
+    background-color: #F8E68F;
+    border: 2px solid #F8E68F;
 }
 
 .registration-seller-info-block {

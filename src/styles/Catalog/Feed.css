@@ -1,0 +1,83 @@
+.catalog-feed-block{
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 2.5% 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    color: #133115;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    /* display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 90%; */
+}
+
+.ad-card {
+    background-color: #FFFFFF;
+    /* position: relative; */
+    width: 100%;
+    height: 105%;
+    border: 2px solid #F3E8D4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.promo {
+    border: 3px solid #F8E68F;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.ad-card-location{
+    font-size: 10px;
+    left: 1px;
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+.ad-card-image-placeholder{
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    width: 90%;
+    height: 55%;             
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 20px;
+}
+
+.ad-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* Масштабирование фото с обрезкой */
+    object-position: center;   /* Центрирование фото */
+}
+
+.ad-card-title{
+    max-width: 140px;
+    max-height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+
+.ad-card-title p{
+    white-space: normal; 
+    margin: 0;
+}
+
+.ad-card-price{
+    font-size: 16px;
+    align-self: flex-end;
+    margin-right: 15px;
+}

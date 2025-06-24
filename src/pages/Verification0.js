@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Verification0() {
-    // const {userId, setUserId} = useContext(UserContext);
     const navigate = useNavigate();
     const [continueType, setContinueType] = useState("here")
 
@@ -70,14 +69,7 @@ function Verification0() {
 
             <div className="verification-kyc-0-fifthl">
                 <div onClick={() => hadleClickContinueTypeBut('here')} className={continueType === 'here' ? "verification-kyc-0-fifthl-but-block active" : "verification-kyc-0-fifthl-but-block" }>
-                    {/* <button type="button" onClick={() => hadleClickContinueTypeBut('here')} className={continueType === 'Продавец' ? "verification-kyc-0-fivel-continue-type-but active" : "verification-kyc-0-fivel-continue-type-but" }> */}
-                        Продолжить на этом устройстве
-                    {/* </button> */}
-                </div>
-                <div onClick={() => hadleClickContinueTypeBut('another')} className={continueType === 'another' ? "verification-kyc-0-fifthl-but-block active" : "verification-kyc-0-fifthl-but-block" }>
-                    {/* <button type="button" onClick={() => hadleClickContinueTypeBut('another')} className={continueType === 'Покупатель' ? "verification-kyc-0-fivel-continue-type-but active" : "verification-kyc-0-fivel-continue-type-but" }> */}
-                        Продолжить на телефоне
-                    {/* </button> */}
+                        Продолжить
                 </div>
             </div>
         </div>

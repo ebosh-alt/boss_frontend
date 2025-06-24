@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../styles/Catalog/FilterPannel.css";
 import Selector from '../../services/Selector';
 
-const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, setPriceRange, location, setLocation }) => {
+const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, setPriceRange, location, setLocation, gender, setGender }) => {
     // const [sortOrder, setSortOrder] = useState('');
     // const [priceRange, setPriceRange] = useState({ min: '', max: '' });
     // const [location, setLocation] = useState('');
@@ -13,6 +13,7 @@ const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, s
         setSortOrder('')
         setPriceRange({ min: '', max: '' })
         setLocation('')
+        setGender("Женский")
     }
 
 
@@ -24,8 +25,8 @@ const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, s
     const optionsOrder = [
         { label: 'Популярные', value: 'popular', img: "" },
         { label: 'Популярные', value: 'popular', img: "" },
-        { label: 'Дешевле', value: 'd', img: "" },
-        { label: 'Дороже', value: 'dd', img: "" },
+        { label: 'Дешевле', value: 'price_asc', img: "" },
+        { label: 'Дороже', value: 'price_desc', img: "" },
     ];
 
     const handleSelectLocation = (option) => {
@@ -34,10 +35,10 @@ const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, s
     };
 
     const optionsLocation = [
-        { label: 'Город', value: '', img: "" },
-        { label: 'Москва', value: 'Moscow', img: "" },
-        { label: 'Казань', value: 'Kazan', img: "" },
-        { label: 'Санкт-Петербург', value: 'Saint Petersburg', img: "" },
+        { label: 'Подкатегория', value: '', img: "", id: 0 },
+        { label: 'Верхняя одежда', value: 'Outerwear', img: "", id: 1 },
+        { label: 'Джинсы', value: 'Jeans', img: "", id: 2 },
+        { label: 'Брюки', value: 'Pants', img: "", id: 3 },
     ];
 
     const setIsOpenBlock = (param, setParam) => {
@@ -52,6 +53,11 @@ const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, s
     const setisLocationOpenW = (param) => {
         setisLocationOpen(param)
         setIsOrderOpen(false)
+    }
+
+    function hadleClickStatusBut(gender) {
+        setGender(gender)
+
     }
 
     return (
@@ -85,8 +91,32 @@ const FilterPanel = ({ toggleFilterPanel, sortOrder, setSortOrder, priceRange, s
                         />
                     </div>
                 </div>
+            
             <div className='filter-panel-location-input-block'>
-                Местонахождение
+                Пол
+            </div>
+            <label>
+                <div className="filter-panel-price-input-block">
+
+                    <button type="button" onClick={() => hadleClickStatusBut('Женский')} className={gender === 'Женский' ? "registration-status-but active" : "registration-status-but" }>
+                        Женский
+                    </button>
+                    <button type="button" onClick={() => hadleClickStatusBut('Мужской')} className={gender === 'Мужской' ? "registration-status-but active" : "registration-status-but" }>
+                        Мужской
+                    </button>
+                    <input
+                        id="gender-input"
+                        type="text"
+                        value={gender}
+                        onChange={() => {}}
+                        style={{ display: 'none' }} // скрываем от пользователя
+                    />
+                </div>
+            </label>
+
+
+            <div className='filter-panel-location-input-block'>
+                Подкатегория
             </div>
             <Selector prefix="filter-panel-location" isOpen={isLocationOpen} setIsOpen={setisLocationOpenW} inputCategory={location} handleSelectCategory={handleSelectLocation} options={optionsLocation} />
         </div>

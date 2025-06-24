@@ -5,11 +5,10 @@ import ProfileAdvertisementCard from "./ProfileAdvertisementCard";
 import {GoPlus} from "react-icons/go";
 
 const ProfileAdvertisement = ({status, title, views, price, isActive}) => {
+    // TODO: Функция получения товаров продавца с бека
         const ads = [
             {id: 1, isActive: false, title: 'Название', views: 84, price: '12.345.678', isAdvanced: false},
             {id: 2, isActive: false, title: 'Название', views: 10, price: '12.345.678', isAdvanced: true},
-            {id: 3, isActive: true, title: 'Название', views: 84, price: '12.345.678', isAdvanced: false},
-            {id: 4, isActive: true, title: 'Название', views: 10, price: '12.345.678', isAdvanced: true},
         ];
 
         return (
